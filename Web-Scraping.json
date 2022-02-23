@@ -1,0 +1,59 @@
+[
+  {
+    "for": {
+      "urls": [
+        ".*"
+      ]
+    },
+    "exclude": [
+      {
+        "type": "CSS",
+        "path": ".off-canvas-header"
+      },
+      {
+        "type": "CSS",
+        "path": ".related-products"
+      },
+      {
+        "type": "CSS",
+        "path": ".page-footer"
+      },
+      {
+        "type": "CSS",
+        "path": "#product-data-item-reviews"
+      }
+    ],
+    "metadata": {
+      "booze_name": {
+        "type": "CSS",
+        "path": ".product-info-main .page-title::text"
+      },
+      "booze_price": {
+        "type": "CSS",
+        "path": ".product-info-main .price::text"
+      },
+      "booze_image": {
+        "type": "CSS",
+        "path": "#mtImageContainer figure > img::attr(src)"
+      },
+      "booze_country": {
+        "type": "CSS",
+        "path": "#product-data-item-additional strong[data-th='Country']::text"
+      }
+      ,
+      "booze_region": {
+        "type": "CSS",
+        "path": "#product-data-item-additional strong[data-th='Region']::text"
+      },
+      "booze_degree": {
+        "type": "CSS",
+        "path": "#product-data-item-additional strong[data-th='Degree of alcohol']::text"
+      },
+      "booze_size": {
+        "type": "CSS",
+        "path": "#product-data-item-additional strong[data-th='Size']::text"
+      }
+      
+    }
+  }
+]

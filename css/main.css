@@ -1,0 +1,68 @@
+.quick-view-button.CoveoQuickview {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #7e003f;
+  color: #ffffff;
+  border: none;
+  font-family: Maax, Helvetica, Arial, Verdana, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.533em;
+  transition-property: background-color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+  min-width: 100%;
+  padding: 0.5em;
+}
+.quick-view-button.CoveoQuickview:hover {
+  background-color: #00838e;
+  text-decoration: none;
+}
+
+.coveo-card-layout-container .coveo-card-layout {
+  border: transparent !important;
+  width: 200px;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card {
+  border: 0.625rem solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-image {
+  height: 200px;
+  align-self: center;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-name {
+  color: #343232;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: Maax, Helvetica, Arial, Verdana, sans-serif;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-name:hover {
+  color: #7e003f;
+  text-decoration: none;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-details span {
+  color: #343232;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-details span:not(:last-child)::after {
+  content: " |";
+  padding: 0px 5px;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-sku {
+  font-size: 0.75rem;
+}
+.coveo-card-layout-container .coveo-card-layout .result-card .booze-price {
+  color: #343232;
+  font-weight: 700;
+  line-height: 1.15;
+  font-size: 1.125rem;
+}/*# sourceMappingURL=main.css.map */

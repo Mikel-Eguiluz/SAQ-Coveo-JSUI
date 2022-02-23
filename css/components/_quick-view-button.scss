@@ -1,0 +1,22 @@
+.quick-view-button.CoveoQuickview {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $red;
+  color: $white;
+  border: none;
+  font-family: Maax,Helvetica,Arial,Verdana,sans-serif;
+  font-size: .9375rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.533em;
+  transition-property: background-color;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+  min-width: 100%;
+  padding: 0.5em;
+  &:hover{
+    background-color: $green;
+    text-decoration: none;
+  }
+}

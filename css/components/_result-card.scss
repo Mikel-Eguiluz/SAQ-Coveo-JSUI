@@ -1,0 +1,55 @@
+.coveo-card-layout-container{
+  // display: grid;
+  // grid-gap: 20px;
+  // grid-template-columns: 1fr 1fr 1fr;
+  .coveo-card-layout{
+    border: transparent !important;
+    width: 200px; 
+    .result-card{
+      border: 0.625rem solid $grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;    
+        
+      .booze-{
+        &image{
+          height: 200px;
+          align-self: center;
+        }
+        &name{
+          color: $black;
+          font-size: 1.125rem;
+          font-weight: 700;
+          font-family: Maax,Helvetica,Arial,Verdana,sans-serif;
+          text-decoration: none;
+          padding: 10px 0 ;
+          &:hover{
+            color: $red;
+            text-decoration: none;
+          }
+        }
+        &details{
+          span{
+            color: $black;
+            font-size: .8125rem;
+            font-weight: 700;
+            &:not(:last-child)::after{
+              content: " |";
+              padding: 0px 5px;
+            }
+          }
+        }
+        &sku{
+          font-size: .75rem;         
+        }
+        &price{
+          color: $black;
+          font-weight: 700;
+          line-height: 1.15;
+          font-size: 1.125rem;         
+        }
+      }
+    }
+}
+}

@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10091/css/CoveoFullSearch.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script class="coveo-script" src="https://static.cloud.coveo.com/searchui/v2.10091/js/CoveoJsSearch.js"></script>
+  <script src="https://static.cloud.coveo.com/searchui/v2.10091/js/templates/templates.js"></script>
+  <!-- <script src="js/boozeShop.js"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const root = Coveo.$$(document).find('#search')
+      Coveo.SearchEndpoint.configureCloudV2Endpoint(
+        'meguiluzcoveocomlightarmadillo8tqfs524',
+        'xxa36433b0-6d91-47d7-b77e-8ba9a3508ab7'
+      )
+      Coveo.init(root)
+    })
+
+
+  </script>
+
+</head>
+
+<body>
+  <div id="search" class="CoveoSearchInterface" data-enable-history="true">
+    <div class="CoveoFolding"></div>
+    <div class="CoveoAnalytics"></div>
+    <div class="coveo-tab-section">
+      <a class="CoveoTab" data-id="All" data-caption="All Content"></a>
+    </div>
+    <div class="coveo-search-section">
+      <div class="CoveoSearchbox" data-enable-omnibox="true"></div>
+    </div>
+    <div class="coveo-main-section">
+      <div class="coveo-facet-column">
+        <div class="CoveoDynamicFacet" data-title="Region" data-field="@booze_region" data-tab="All"
+          data-number-of-values=""></div>
+        <div class="CoveoDynamicFacet" data-title="Size" data-field="@booze_size" data-tab="All"
+          data-number-of-values="">
+        </div>
+        <div class="CoveoDynamicFacet" data-title="Degree of alcohol" data-field="@booze_degree" data-tab="All"
+          data-number-of-values=""></div>
+      </div>
+      <div class="coveo-results-column">
+        <div class="coveo-results-header">
+          <div class="coveo-summary-section">
+            <span class="CoveoQuerySummary">
+              <div class="coveo-show-if-no-results"></div>
+            </span>
+            <span class="CoveoQueryDuration"></span>
+          </div>
+          <div class="coveo-result-layout-section">
+            <span class="CoveoResultLayout"></span>
+          </div>
+          <!-- <div class="coveo-sort-section">
+            <span class="CoveoSort" data-sort-criteria="relevancy" data-caption="Relevance"></span>
+            <span class="CoveoSort" data-sort-criteria="date descending,date ascending" data-caption="Date"></span>
+          </div> -->
+        </div>
+
+        <div class="CoveoResultList" data-layout="card" data-wait-animation="fade">
+          <script id="productTemplate" class="result-template" type="text/html">
+          <div class="coveo-result-frame result-card">
+              <a class='CoveoResultLink booze-image ' data-href-template="${raw.clickableuri}" data-always-open-in-new-window="true">
+                <div class="CoveoImageFieldValue "       data-field="@booze_image" data-height="166"></div>
+              </a>
+              <a class='CoveoResultLink booze-name'  data-href-template="${raw.clickableuri}" data-always-open-in-new-window="true">
+                <span class="CoveoFieldValue " data-field="@booze_name"></span>
+              </a>
+              <div class='booze-details'>
+                  <span >category</span>
+                  <span class="CoveoFieldValue "
+                    data-field="@booze_size"></span>
+                  <span class="CoveoFieldValue "
+                    data-field="@booze_country"></span>
+              </div>
+              <span class='booze-sku' > SKU placeholder</span>                
+              <span class="CoveoFieldValue booze-price"
+                data-field="@booze_price"></span>              
+              <button class='CoveoQuickview quick-view-button ' >QuickView </button>
+            
+          </div>
+        </script>
+        </div>
+        <div class="CoveoPager"></div>
+        <div class="CoveoLogo"></div>
+        <div class="CoveoResultsPerPage"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
