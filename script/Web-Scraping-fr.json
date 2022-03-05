@@ -52,8 +52,31 @@
       "booze_size": {
         "type": "CSS",
         "path": "#product-data-item-additional strong[data-th='Format']::text"
+      },
+      "booze_price_amount": {
+        "type": "XPATH",
+        "path": "//head/meta[@property='product:price:amount']/@content"
+      }      ,
+      "booze_saq_code": {
+        "type": "CSS",
+        "path": "#product-data-item-additional strong[data-th='Code SAQ']::text"
+      },
+      "booze_availability": {
+        "type": "XPATH",
+        "path": "//head/meta[@property='product:availability']/@content"
+      },
+      "booze_category": {
+        "type": "XPATH",
+        "path": "//head/meta[@property='product:category']/@content"
+      },
+      "booze_rating": {
+        "type": "CSS",
+        "path": ".product-info-main span[itemprop='ratingValue']::text"
+      },
+      "booze_review_count": {
+        "type": "CSS",
+        "path": ".product-info-main span[itemprop='reviewCount']::text"
       }
-      
     }
   }
 ]

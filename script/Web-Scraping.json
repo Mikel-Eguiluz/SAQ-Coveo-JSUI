@@ -30,8 +30,16 @@
       },
       "booze_price": {
         "type": "CSS",
-        "path": ".product-info-main .price::text"
+        "path": ".product-info-price .price::text"
       },
+      "booze_price_amount": {
+        "type": "XPATH",
+        "path": "//head/meta[@property='product:price:amount']/@content"
+      }      ,
+      "booze_saq_code": {
+        "type": "CSS",
+        "path": "#product-data-item-additional strong[data-th='SAQ code']::text"
+      },      
       "booze_image": {
         "type": "CSS",
         "path": "#mtImageContainer figure > img::attr(src)"
@@ -39,8 +47,7 @@
       "booze_country": {
         "type": "CSS",
         "path": "#product-data-item-additional strong[data-th='Country']::text"
-      }
-      ,
+      },
       "booze_region": {
         "type": "CSS",
         "path": "#product-data-item-additional strong[data-th='Region']::text"
@@ -52,8 +59,23 @@
       "booze_size": {
         "type": "CSS",
         "path": "#product-data-item-additional strong[data-th='Size']::text"
+      },
+      "booze_availability": {
+        "type": "XPATH",
+        "path": "//head/meta[@property='product:availability']/@content"
+      },
+      "booze_category": {
+        "type": "XPATH",
+        "path": "//head/meta[@property='product:category']/@content"
+      },
+      "booze_rating": {
+        "type": "CSS",
+        "path": ".product-info-main span[itemprop='ratingValue']::text"
+      },
+      "booze_review_count": {
+        "type": "CSS",
+        "path": ".product-info-main span[itemprop='reviewCount']::text"
       }
-      
     }
   }
 ]

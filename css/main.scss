@@ -1,14 +1,11 @@
-
-   
 @import "abstracts";
 
-//@import "base/generics";
-//@import "base/typography";
+@import "layout/search-section";
+@import "layout/results-header";
+@import "layout/result-card";
+@import "layout/facets";
+@import "layout/pager-footer";
 
+@import "components/star-rating";
+@import "components/breadcrumb";
 @import "components/quick-view-button";
-@import "components/result-card";
-//@import "components/button";
-
-//@import "layout/header";
-//@import "layout/main-content";
-//@import "layout/footer";

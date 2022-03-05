@@ -1,0 +1,28 @@
+.pager-footer{
+  display: flex;
+  justify-content: space-between;
+  .select-label{
+    font-size: 14px;
+    color: $black;
+  }
+  #pageSizeSelect{ 
+    margin-inline: 5px; 
+    appearance: none;
+    background-image: none;
+    min-height: 2.86em;
+    padding: 0 0.71em;
+    border: 0.125rem solid $grey;
+    background-color: $white;
+    color: #343232;
+    font-family: Roboto,Helvetica,Arial,Verdana,sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.64em;
+    letter-spacing: 0;
+  }
+  .CoveoPager{
+    .coveo-pager-list-item{
+      border: none;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="./css/main.css" />
   <script class="coveo-script" src="https://static.cloud.coveo.com/searchui/v2.10091/js/CoveoJsSearch.js"></script>
   <script src="https://static.cloud.coveo.com/searchui/v2.10091/js/templates/templates.js"></script>
-  <!-- <script src='https://static.cloud.coveo.com/searchui/v2.10091/js/cultures/fr.js'></script> -->
+  <script src='https://static.cloud.coveo.com/searchui/v2.10091/js/cultures/fr.js'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,29 +21,30 @@
     <div class="CoveoTriggers"></div>
 
     <div class="coveo-search-section">
-
       <div class="saq-logo">
         <img src="https://www.saq.com/media/logo/stores/2/logo-header-site-2022.png"
           title="Société des alcools du Québec" alt="Société des alcools du Québec" width="136" height="40">
       </div>
+
       <div class="CoveoSearchbox" data-enable-omnibox="true" data-enable-query-suggest-addon="true" data-inline="true"
         data-enable-search-as-you-type="true">
       </div>
       <div class="coveo-tab-section" style="display: none;">
-        <a class="CoveoTab" id="tab-english" data-id="tab-english" data-caption="English"
-          data-expression="@source==&quot;SAQ-products-EN&quot;"></a>
-        <!-- <a class="CoveoTab" id="tab-french" data-id="tab-french" data-caption="Français"
-          data-expression="@source==&quot;SAQ-products-FR&quot;"></a> -->
+        <a class="CoveoTab" id="tab-french" data-id="tab-french" data-caption="Français"
+          data-expression="@source==&quot;SAQ-products-FR&quot;"></a>
+        <!-- <a class="CoveoTab" id="tab-english" data-id="tab-english" data-caption="English"
+          data-expression="@source==&quot;SAQ-products-EN&quot;"></a> -->
+
       </div>
       <div class="language-section">
-        <!-- <a href="./index.html" id="englishBtn">English</a> -->
-        <a href="./indexFr.html" id="frenchBtn">Français</a>
+        <a href="./index.html" id="englishBtn">English</a>
+        <!-- <a href="./indexFr.html" id="frenchBtn">Français</a> -->
       </div>
     </div>
     <div class="coveo-main-section">
       <div class="coveo-facet-column">
 
-        <div class="CoveoBreadcrumb" data-title="Filters"></div>
+        <div class="CoveoBreadcrumb" data-title="Filtres"></div>
 
         <div class="CoveoDynamicFacet" data-title="Availability" data-field="@booze_availability"></div>
 
@@ -56,11 +57,11 @@
 
 
         <div class="CoveoDynamicFacetRange" data-title="Rating" data-field="@booze_rating" data-ranges="[
-          { &quot;start&quot; : 0 , &quot;end&quot; : 20,&quot;label&quot;:&quot; 0 stars &quot; },
-          { &quot;start&quot; : 20 , &quot;end&quot; : 40,&quot;label&quot;:&quot;1 star &quot; },
-          { &quot;start&quot; : 40 , &quot;end&quot; : 60,&quot;label&quot;:&quot;2 stars &quot; },
-          { &quot;start&quot; : 60 , &quot;end&quot; : 80,&quot;label&quot;:&quot;3 stars &quot; },
-          { &quot;start&quot; : 80 , &quot;end&quot; : 100,&quot;label&quot;:&quot; 4+ stars &quot; }]">
+              { &quot;start&quot; : 0 , &quot;end&quot; : 20,&quot;label&quot;:&quot; 0 étoiles &quot; },
+              { &quot;start&quot; : 20 , &quot;end&quot; : 40,&quot;label&quot;:&quot;1 étoile &quot; },
+              { &quot;start&quot; : 40 , &quot;end&quot; : 60,&quot;label&quot;:&quot;2 étoiles &quot; },
+              { &quot;start&quot; : 60 , &quot;end&quot; : 80,&quot;label&quot;:&quot;3 étoiles &quot; },
+              { &quot;start&quot; : 80 , &quot;end&quot; : 100,&quot;label&quot;:&quot; 4+ étoiles &quot; }]">
         </div>
 
         <div class="CoveoDynamicFacet coveo-bottom-border" data-title="Region" data-field="@booze_region"></div>
@@ -93,7 +94,7 @@
             <% 
             try{
               if(rankingModifier != null) { 
-                %><div class="booze-featured" >Featured Result</div><%
+                %><div class="booze-featured" >Résultat Recommandé </div><%
               }
             }catch(e){} %>
             <a class='CoveoResultLink booze-image ' data-href-template="${raw.clickableuri}" data-always-open-in-new-window="true">
@@ -133,7 +134,7 @@
               data-helper="addTickOrCross"
               data-html-value="true"></span>
 
-            <button class='CoveoQuickview quick-view-button'>QuickView </button>
+            <button class='CoveoQuickview quick-view-button'>Vue Rapide </button>
           </div>
         </script>
         </div>

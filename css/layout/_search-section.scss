@@ -1,0 +1,40 @@
+.CoveoSearchInterface{
+  .coveo-search-section{
+    
+    margin: auto;
+    max-width: 1200px ;
+    .saq-logo{
+      @include flex-center;
+      width: calc(23% + 10px);
+    }
+    .CoveoSearchBox{
+      .CoveoOmnibox{
+        border: none; border-bottom: 2px solid $black ; 
+      }
+      .CoveoSearchButton{
+        // padding: 0;
+        // height: 25px;
+        border: none;       
+      }
+      .magic-box-clear{
+        @include flex-center
+      }
+    
+    }
+    .language-section{
+      
+      a{
+        border: 2px solid #f2f2f2;
+        padding: 10px;
+        color: $black;
+        text-decoration: none;
+        color: #343232;
+        font-family: Maax, Helvetica, Arial, Verdana, sans-serif;
+        font-size: 0.9375rem;
+        font-weight: 700;
+      }
+      
+      
+    }
+  }
+}

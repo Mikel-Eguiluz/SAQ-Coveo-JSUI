@@ -1,0 +1,94 @@
+.coveo-card-layout-container{
+  .coveo-card-layout{
+    border: transparent !important;
+    width: 250px; 
+    .result-card{
+      border: 0.625rem solid $grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column; 
+      
+        
+      .booze-{
+        &image{
+          height: 200px;
+          align-self: center;
+          
+        }
+        &featured{
+          background-color: $green;
+          color: $white;
+          padding: 5px;
+          width: 200%;
+          font-size: .8125rem;
+          font-weight: 700;
+          position: absolute;
+          text-align: center;
+          transform:  translate(-18% , 70%) rotate(45deg);
+        }
+        &name{
+          color: $black;
+          font-size: 1.125rem;
+          font-weight: 700;
+          font-family: Maax,Helvetica,Arial,Verdana,sans-serif;
+          text-decoration: none;
+          padding: 10px 0 ;
+          &:hover{
+            color: $red;
+            text-decoration: none;
+          }
+        }
+        &details{
+          span{
+            color: $black;
+            font-size: .8125rem;
+            font-weight: 700;
+            &:not(:last-child)::after{
+              content: " |";
+              padding: 0px 5px;
+            }
+          }
+        }
+        &sku{
+          span{
+            margin: 0;
+          }
+          font-size: .75rem;  
+          margin-bottom: 12px;   
+        }
+        &rating{
+          margin-bottom: 12px; 
+          span:nth-child(2){
+            display: inline-block;
+            transform: translateY(-1.5px);
+            &::before{
+              content: "(";
+            }
+            &::after{
+              content: ")";
+            }
+          }
+        }
+        &price{
+          color: $black;
+          font-weight: 700;
+          line-height: 1.15;
+          font-size: 1.125rem;  
+          margin-bottom: 12px;         
+        }
+        &availability{
+          span{
+            color: $black;
+            pointer-events: none;
+          }
+          
+          background-color: $grey;
+          padding: 5px;
+          font-size: .625rem;
+          margin-bottom: 12px;        
+        }
+      }
+    }
+  }
+}

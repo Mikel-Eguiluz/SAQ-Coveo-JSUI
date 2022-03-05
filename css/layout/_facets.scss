@@ -1,0 +1,106 @@
+.CoveoSearchInterface{
+  .coveo-facet-column{
+    width: 23%;
+    .CoveoDynamicFacet,
+    .CoveoDynamicFacetRange{
+      border: none;
+      border-top: 2px solid $grey;
+      .coveo-dynamic-facet{
+        &-values{
+          padding: 0;
+        }
+        &-header{
+          border: 0;
+          span{
+            color: $black;
+            font-family: Maax,Helvetica,Arial,Verdana,sans-serif;
+            font-size: .9375rem;
+            font-weight: 700;
+          }
+          &-expand,
+          &-collapse{
+            position: relative;
+            flex: 0 2 40px;
+            svg{
+              color: transparent;
+            }
+            &::before{
+              position: absolute;
+              color: $black;
+              content: "+";
+              inset: 0;
+              font-size: 25px;
+              @include flex-center
+            }
+          }
+          &-collapse::before{
+            content: '-';
+          }        
+        }
+      }
+      .coveo-checkbox{
+        &-button{
+          display: none;
+          &[aria-pressed="true"] ~ span{
+            color: $red ;
+          }
+        }
+        &-span-label{
+          text-transform: capitalize;
+          margin-left: 0 !important;
+          &:hover{
+            color: $red;
+          }
+        }
+      }
+    }
+
+    .CoveoFacetSlider{
+      border: none;
+      border-top: 2px solid $grey;
+      .coveo-facet-header{
+        padding: 0;
+        padding-top: 8px;
+        background-color: inherit;
+      }
+      .coveo-facet-header-title{
+        color: $black;
+        font-family: Maax,Helvetica,Arial,Verdana,sans-serif;
+        font-size: .9375rem;
+        font-weight: 700;
+      }  
+      .coveo-slider-{
+        &container{
+          padding: 15px 10px 0;
+          height: unset;
+        }
+        &line{        
+          background-color: $grey;
+          border-radius: 100px;
+          border: transparent;
+          &.coveo-active{ 
+            background-color: $red !important;
+          }
+        }
+        &button{
+          border-radius: 50%;
+          border:2px solid $red;  
+          background-color: $grey ;
+          &::before{
+            border: none;
+          }
+          &::after{
+            border: none;
+          }
+        }
+        &caption{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .coveo-bottom-border{
+      border-bottom: 2px solid $grey;
+    }
+  }
+}

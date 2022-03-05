@@ -1,0 +1,38 @@
+.CoveoBreadcrumb{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  &::before{
+    content: attr(data-title);
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    font-family: Maax,Helvetica,Arial,Verdana,sans-serif;
+  };
+  .coveo-breadcrumb{
+    &-items{
+      display: flex;
+      flex-wrap: wrap;
+      .coveo-facet-slider-breadcrumb-value,
+      button{
+        background-color: $grey;
+        padding: 5px;
+        font-size: .625rem;
+        color: $black;
+        text-transform: capitalize;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      .coveo-dynamic-facet-breadcrumb-title,
+      .coveo-facet-breadcrumb-title,
+      .coveo-facet-slider-breadcrumb-title{
+        display: none;
+      }
+    }
+    &-clear-all{
+      display: none;
+    }
+  }
+}
